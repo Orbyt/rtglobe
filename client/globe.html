@@ -1,0 +1,54 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Realtime WebGL Globe Example</title>
+    <meta name="description" content="A webgl earth making it easy to add shapes at coordinates in realtime.">
+    <style>
+
+      body {
+        padding: 0;
+        margin: 0;
+        background: black;
+      }
+
+      .moveblock {
+        color: white;
+        background: red;
+        position: fixed;
+      }
+
+      .changedata {
+        color: white;
+        background: red;
+        position: fixed;
+        top: 22px;
+      }
+      .spawnblock {
+        color: white;
+        background: red;
+        position: fixed;
+        top: 44px;
+      }
+
+    </style>
+    
+  </head>
+  <body>
+   
+      {{> globe}}
+      {{> ui}}
+   
+  </body>
+
+  <template name="globe">
+     <main>
+      <div id='globe'></div>
+    </main>
+  </template>
+
+  <template name="ui">
+    <button class="moveblock">move block</button>
+    <button class="changedata">change data</button>
+    <button class="spawnblock">spawn block</button>
+  </template>
